@@ -7,9 +7,19 @@
     <title>Laravel-model-controller</title>
 </head>
 <body>
-    <h1>benvenuti a model e controller</h1>
+    <h1>Film</h1>
 
-    @foreach ($movies as $value)
+    @foreach ($movies as $movie)
+    <div class="">
+        <ul>
+          <li>
+            <h2 class="">{{$movie['title']}}</h2>
+            <h4 class=""> {{$movie['original_title']}} </h4>
+            <p>date: {{$movie['date']}}</p>
+            <p>vote: {{$movie['vote']}} </p>
+          </li>
+        </ul>
+      </div>
         
     @endforeach
 </body>
