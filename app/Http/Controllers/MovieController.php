@@ -8,7 +8,7 @@ class MovieController extends Controller
 {
     public function index(){
         // recuperare film db
-        
-        return view('home');
+        $movies = [];
+        return view('home', compact('movies'));
     }
 }
