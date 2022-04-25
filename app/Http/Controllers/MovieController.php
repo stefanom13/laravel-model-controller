@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
     public function index(){
         // recuperare film db
-        $movies = [];
+        $movies = Movie::all();
+
         return view('home', compact('movies'));
     }
 }

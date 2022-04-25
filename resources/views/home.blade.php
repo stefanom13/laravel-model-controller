@@ -9,7 +9,7 @@
 <body>
     <h1>benvenuti a model e controller</h1>
 
-    @foreach ($movies as $movie)
+    @foreach ($movies as $value)
         
     @endforeach
 </body>
